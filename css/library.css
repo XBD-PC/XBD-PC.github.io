@@ -10,7 +10,7 @@
 /*轮播*/
 .scrollAD { width:10000%; position: absolute; left:0;}
 .scrollAD li{  float:left;}
-.scrollAD li a{  height: 400px; background: url("../images/banner/banner1.gif") no-repeat center top; display: block;}
+.scrollAD li a{  height: 400px; background: url("../images/banner/banner1.jpg") no-repeat center top; display: block;}
 .cornerAD { position: absolute; font-size: 0; left:50%; bottom:10px; margin-left:-35px;}
 .cornerAD li{margin-right:10px; width:10px; height: 10px; border-radius:50%; -moz-border-radius: 50%;  -webkit-border-radius: 50%;  background: #666; float: left; cursor: pointer; behavior:url(plugIn/PIE.htc); }
 .cornerAD .current{ background: #f06a11; }
