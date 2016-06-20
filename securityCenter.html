@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安全中心-迅泊达</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/library.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/js.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script type="text/javascript" src="plugIn/PIE.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="content">
+    <div class="modality securityCenterModality ">
+        <div class="user phoneAuthenticationF">
+            <h4>手机认证 <em class="iconfont close">&#xe621;</em></h4>
+            <form action="" class="userFrom">
+                <div class="phone clearfix FU">
+                    <label for="phone" class="fl"><em>*</em> 手机号：</label>
+                    <input class="fl" type="text" id="phone"  datatype="m" nullmsg="请输入您的手机号码！" errormsg="请输入您的手机号码！" >
+                </div>
+                <div class="picCodePhone clearfix FU">
+                    <label for="picCodePhone" class="fl" ><em>*</em> 验证码：</label>
+                    <input type="text" id="picCodePhone" class="fl code">
+                    <span class="verificationCode fl"><img src="images/yanzhengma.jpg" alt=""></span>
+                </div>
+                <div class="SMSCode clearfix FU">
+                    <label for="SMSCodePhone1" class="fl"><em>*</em> 短信验证码：</label>
+                    <input type="text" id="SMSCodePhone1" class="fl code">
+                    <span class="verificationCode fl textCode codeBtn">获取验证码</span>
+                </div>
+                <input class="regsiterBtn noMargin" type="submit" value="确认提交">
+            </form>
+        </div>
+        <div class="user mailAuthenticationF">
+            <h4>邮箱认证 <em class="iconfont close">&#xe621;</em></h4>
+            <form action="" class="userFrom">
+                <p class="redPrompt">请登录邮箱找回</p>
+                <div class="mail clearfix FU">
+                    <label for="mail" class="fl"><em>*</em> 电子邮箱：</label>
+                    <input class="fl" type="text" id="mail"  datatype="m" nullmsg="请输入您的手机号码！" errormsg="请输入您的手机号码！" >
+                </div>
+                <div class="SMSCode clearfix FU">
+                    <label for="SMSCodePhone" class="fl"><em>*</em> 验证码：</label>
+                    <input type="text" id="SMSCodePhone" class="fl code">
+                    <span class="verificationCode fl textCode codeBtn">获取验证码</span>
+                </div>
+                <input class="regsiterBtn noMargin" type="submit" value="确认提交">
+            </form>
+        </div>
+        <div class="user realNameAuthenticationF">
+            <h4>实名认证 <em class="iconfont close">&#xe621;</em></h4>
+            <form action="" class="userFrom">
+                <p class="redPrompt">为保障您账户的安全，请如实填写真实姓名并保持和银行卡开户名一致，实名认证通过后将不能修改</p>
+                <div class="name clearfix FU">
+                    <label for="name" class="fl"><em>*</em> 真实姓名：</label>
+                    <input type="text" id="name" class="fl">
+                </div>
+                <div class="ID clearfix FU" >
+                    <label for="ID" class="fl"><em>*</em> 证件号码：</label>
+                    <input type="text" id="ID" class="fl">
+                </div>
+                <div class="radio clearfix">
+                    <div class="left fl"><em>*</em> 性别：</div>
+                    <div class="right fl">
+                        <input type="radio" id="man" name="gender" checked="true" >
+                        <label for="man" class="man">男</label>
+                        <input type="radio" id="girl" name="gender">
+                        <label for="girl">女</label>
+                    </div>
+                </div>
+                <input class="regsiterBtn noMargin" type="submit" value="确认提交">
+            </form>
+        </div>
+        <div class="user modifyLoginPasswordF">
+            <h4>修改登录密码<em class="iconfont close">&#xe621;</em></h4>
+            <form action="" class="userFrom phoneRegsiter">
+                <p class="redPrompt">为保障您账户安全，请定期更换登录密码确保与提现密码不同</p>
+                <div class="originalPassword clearfix FU">
+                    <label for="originalPassword" class="fl"><em>*</em> 原始密码：</label>
+                    <input type="text" id="originalPassword" class="fl">
+                </div>
+                <div class="NewPassword clearfix FU">
+                    <label for="NewPassword" class="fl"><em>*</em> 新密码：</label>
+                    <input type="text" id="NewPassword" class="fl">
+                </div>
+                <div class="confirmPassword clearfix FU" >
+                    <label for="confirmPasswordPhone" class="fl"><em>*</em> 确实密码：</label>
+                    <input type="text" id="confirmPasswordPhone" class="fl">
+                </div>
+                <input class="regsiterBtn noMargin" type="submit" value="确认提交">
+            </form>
+        </div>
+        <div class="user modifyPayPasswordF">
+            <h4>修改交易密码<em class="iconfont close">&#xe621;</em></h4>
+            <form action="" class="userFrom phoneRegsiter">
+                <p class="redPrompt">初始交易密码与您注册的登录密码一致，请注意经常修改！</p>
+                <div class="originalPayPassword clearfix FU">
+                    <label for="originalPayPassword" class="fl"><em>*</em> 原始交易密码：</label>
+                    <input type="text" id="originalPayPassword" class="fl">
+                </div>
+                <div class="NewPayPassword clearfix FU">
+                    <label for="NewPayPassword" class="fl"><em>*</em> 新交易密码：</label>
+                    <input type="text" id="NewPayPassword" class="fl">
+                </div>
+                <div class="confirmPayPassword clearfix FU" >
+                    <label for="confirmPayPassword" class="fl"><em>*</em> 确实交易密码：</label>
+                    <input type="text" id="confirmPayPassword" class="fl">
+                </div>
+                <div class="SMSCode clearfix FU">
+                    <label for="SMSCodePhone2" class="fl"><em>*</em> 验证码：</label>
+                    <input type="text" id="SMSCodePhone2" class="fl code">
+                    <span class="verificationCode fl textCode codeBtn">获取验证码</span>
+                </div>
+                <input class="regsiterBtn noMargin" type="submit" value="确认提交">
+            </form>
+        </div>
+        <!--<div class="user QQAuthenticationF">-->
+            <!--<h4>QQ群认证<em></em></h4>-->
+            <!--<form action="" class="userFrom phoneRegsiter">-->
+                <!--<p class="redPrompt">QQ群认证让您更好的与他人交流</p>-->
+                <!--<div class="QQ clearfix FU last" >-->
+                    <!--<label for="QQ" class="fl"><em>*</em> 请输入QQ号：</label>-->
+                    <!--<input type="text" id="QQ" class="fl">-->
+                <!--</div>-->
+                <!--<p class="promptDefault"><em>*</em>待管理员审核</p>-->
+                <!--<input class="regsiterBtn noMargin" type="submit" value="确认提交">-->
+            <!--</form>-->
+        <!--</div>-->
+        <!--<div class="user WXAuthenticationF">-->
+            <!--<h4>微信认证<em></em></h4>-->
+            <!--<form action="" class="userFrom phoneRegsiter">-->
+                <!--<p class="redPrompt">微信认证让您第一时刻收到最新消息</p>-->
+                <!--<div class="WX clearfix FU last" >-->
+                    <!--<label for="WX" class="fl"><em>*</em> 请输入微信昵称：</label>-->
+                    <!--<input type="text" id="WX" class="fl">-->
+                <!--</div>-->
+                <!--<p class="promptDefault"><em>*</em>待管理员审核</p>-->
+                <!--<input class="regsiterBtn noMargin" type="submit" value="确认提交">-->
+            <!--</form>-->
+        <!--</div>-->
+    </div>
+    <div id="rightFixedNav">
+        <ul>
+            <li class="user">
+                <a href="javascript:void(0);" class="iconfont">&#xe622;</a>
+                <span class="text">我的<br>账户</span>
+
+            </li>
+            <li class="QQ">
+                <a href="javascript:void(0);" class="iconfont">&#xe610;</a>
+                <span class="text">在线<br>客服</span>
+            </li>
+            <li class="WX">
+                <a href="javascript:void(0);" class="iconfont">&#xe60e;</a>
+                <span class="fade"><em class="iconfont">&#xe605;</em></span>
+                <span class="text">二维<br>码<u style="color: #3b3c42">码</u> <img src="images/codeIcon.jpg" alt=""></span>
+            </li>
+            <li class="interest">
+                <a href="javascript:void(0);" class="interest"><img src="images/interest.jpg" alt=""></a>
+                <span class="text">利息<br>计算</span>
+            </li>
+        </ul>
+        <span class="digg"><i class="iconfont">&#xe60f;</i></span>
+    </div>
+    <div id="top">
+        <div  class="cnt">
+            <p class="fl">
+                <span>客服热线：400-880-7023</span>
+                <a href="javascript:;">在线客服</a>
+            </p>
+            <ul class=" listUl fr">
+                <li class="login"><a href="#" class="orange">请登录</a></li>
+                <li class="login"><a href="#">免费注册</a></li>
+                <li>您好，<a href="#" class="orange">fsdfsds</a></li>
+                <li><a href="javascript:;">退出</a></li>
+                <li><a href="#">交流社区</a></li>
+                <li><a href="#">新手指引</a></li>
+                <li class="last"><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav" class="navBorderBottom">
+        <div class="cnt clearfix">
+            <div class="logo fl"><h1><a href="index.html">迅泊达-信泊海内、诚达天下</a></h1></div>
+            <ul class="navList clearfix fr">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="financialDetails.html">我要理财</a></li>
+                <li class="columnList">
+                    <span> 项目介绍 <em class="iconfont bottomIcon">&#xe600;</em></span>
+                    <dl>
+                        <dd><a href="#">车贷E通</a></dd>
+                        <dd><a href="#">装修贷</a></dd>
+                    </dl>
+                </li>
+                <li><a href="activityCenter.html">活动中心</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <li><a href="myAccount.html" class="last">我的账户</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="securityCenterMain" class="cnt clearfix layoutMain">
+        <div class="sideNav fl">
+            <dl sideNavList>
+                <dt class="one"><em class="iconfont">&#xe61b;</em>理财管理</dt>
+                <dd><a href="#">我的投资</a></dd>
+                <dd><a href="#">收款明细</a></dd>
+                <dt class="two"><em class="iconfont">&#xe61d;</em>资金管理</dt>
+                <dd><a href="#">账户详情</a></dd>
+                <dd><a href="#">充值记录</a></dd>
+                <dd><a href="#">提现记录</a></dd>
+                <dd><a href="#">资金明细</a></dd>
+                <dt class="three"><em class="iconfont">&#xe619;</em>账号管理</dt>
+                <dd><a href="#">安全中心</a></dd>
+                <dd><a href="#">邀请好友</a></dd>
+                <dt class="four"><em class="iconfont">&#xe61a;</em>积分抽奖</dt>
+                <dd><a href="#">积分抽奖</a></dd>
+            </dl>
+        </div>
+        <div class="fr securityGuarantee">
+            <h2 class="clearfix"><span class="fl">安全保障</span> <span class="fr right clearfix"><i class="fl">安全等级：</i><em class="fr">一般</em></span></h2>
+            <table>
+                <tr>
+                    <td class="one"><span><em class="iconfont error">&#xe621;</em><i>手机认证</i></span></td>
+                    <td class="two">您的手机已经通过认证，认证的手机号码为：<em>13476188***</em></td>
+                    <td class="three alreadyCertified">已设置</td>
+                </tr>
+                <tr>
+                    <td class="one"><span><em class="iconfont success">&#xe620;</em><i>邮箱认证</i></span></td>
+                    <td class="two">认证您常用的邮箱，收到日常网站资讯和用于找回密码等</td>
+                    <td class="three">开始认证</td>
+                </tr>
+                <tr>
+                    <td class="one"><span><em class="iconfont success">&#xe620;</em><i>实名认证</i></span></td>
+                    <td class="two">实名进行资金账户操作，保证您的资金安全</td>
+                    <td class="three">开始认证</td>
+                </tr>
+                <tr>
+                    <td class="one"><span><em class="iconfont success">&#xe620;</em><i>登录密码</i></span></td>
+                    <td class="two red">为保证您的账户安全，请尽量设置复杂的密码</td>
+                    <td class="three">修改密码</td>
+                </tr>
+                <tr>
+                    <td class="one"><span><em class="iconfont success">&#xe620;</em><i>交易密码</i></span></td>
+                    <td class="two">用于提现等操作，请不要与登录密码相同. <em class="orange">忘记交易密码？</em></td>
+                    <td class="three">修改交易密码</td>
+                </tr>
+                <tr>
+                    <td class="one"><span><em class="iconfont success">&#xe620;</em><i>VIP认证</i></span></td>
+                    <td class="two">VIP认证，可以令您享受VIP特有的操作权限(需先手机、邮箱、实名认证)</td>
+                    <td class="three"></td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td class="one"><span><em class="iconfont success">&#xe620;</em><i>QQ群认证</i></span></td>-->
+                    <!--<td class="two">QQ群认证让您更好的与他人交流</td>-->
+                    <!--<td class="three">开始认证</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="one"><span><em class="iconfont success">&#xe620;</em><i>微信认证</i></span></td>-->
+                    <!--<td class="two">微信认证让您第一时刻收到最新消息</td>-->
+                    <!--<td class="three">开始认证</td>-->
+                <!--</tr>-->
+            </table>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="content">
+            <div class="footer clearfix">
+                <div class="menu cnt">
+                    <div class="weixin">
+                        <img src="images/footer/weixin.gif" alt="">
+                        <p>微信理财</p>
+                    </div>
+                    <ul class="text">
+                        <li class="first"><a href="#">利息计算</a></li>
+                        <li><a href="#">发展历程</a></li>
+                        <li><a href="#">风险准备金</a></li>
+                        <li><a href="#">触屏版</a></li>
+                    </ul>
+                    <ol class="pic">
+                        <li><a href="http://webscan.360.cn/index/checkwebsite/url/www.xbddai.com"><img src="images/footer/360.jpg" alt=""></a></li>
+                        <li><a href="https://ss.knet.cn/verifyseal.dll?sn=e14051542010048969zlh0000000&ct=df&a=1&pa=0.42972546769306064"><img src="images/footer/kexin.jpg" alt=""></a></li>
+                        <li><a href="http://www.itrust.org.cn/"><img src="images/footer/internet.jpg" alt=""></a></li>
+                        <li><a href="http://www.12377.cn/"><img src="images/footer/jubao.jpg" alt=""></a></li>
+                    </ol>
+                </div>
+                <div class="copyright">
+                    <em class="iconfont">&#xe602;</em> 2013 xunboda | 武汉迅泊达金融服务有限公司 | 鄂ICP备13010359
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

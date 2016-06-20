@@ -1,0 +1,181 @@
+/*发标预告滚动条*/
+.sidebarList{ border:1px solid #d3d3d3;}
+.sidebarList .tit{padding-left:16px; padding-right:16px; background:#f8f8f8; border-bottom:#d3d3d3 1px solid; position: relative; font-size: 16px; font-weight: bold; color: #454545; height:50px; line-height:50px; }
+.sidebarList .tit .small{ position: absolute; color: #4194d7; right:16px; font-size: 14px; font-weight: normal;}
+.sidebarList .tit .small em{ font-size:2px;}
+.sidebarList .subListWrap{ padding-left:16px; padding-right:16px; width:288px; position: relative; overflow: hidden;}
+.sidebarList .updataList{height:292px; overflow: hidden; position: relative;}
+.sidebarList .subList li{ position: relative; border-bottom:1px dotted #d3d3d3;}
+
+/*轮播*/
+.scrollAD { width:10000%; position: absolute; left:0;}
+.scrollAD li{  float:left;}
+.scrollAD li a{  height: 400px; background: url("../images/banner/banner1.gif") no-repeat center top; display: block;}
+.cornerAD { position: absolute; font-size: 0; left:50%; bottom:10px; margin-left:-35px;}
+.cornerAD li{margin-right:10px; width:10px; height: 10px; border-radius:50%; -moz-border-radius: 50%;  -webkit-border-radius: 50%;  background: #666; float: left; cursor: pointer; behavior:url(plugIn/PIE.htc); }
+.cornerAD .current{ background: #f06a11; }
+
+/*进度条*/
+.radius{ background: #ff4764; height:12px; width:20px; position: absolute;}
+
+/*倒计时*/
+#holder{height:45px;  }
+.cntSeparator{ margin-top:-14px; color:#333;font-size:30px; width: 16px;  text-indent:3px;}
+.digits{ padding-top:12px;}
+/*.cntDigit{ behavior:url(plugIn/PIE.htc); }*/
+
+/*条形进度条*/
+.progressBarWrap { behavior:url(plugIn/PIE.htc); position:relative;  width:258px; height:12px;  -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius:12px;  background:#e5e5e5; top: 18px; left: 8px;}
+.schedule .progressBar{ behavior:url(plugIn/PIE.htc); position:absolute;  top:0;  left:0;  width:158px; height:12px;  -moz-border-radius: 12px;  -webkit-border-radius: 12px;  border-radius:12px;  background:#4aaef2;}
+.progressBarWrap .progressData{position:absolute;  right:-50px; top:-18px;  display:block;  font-size:16px;}
+
+/*投资项目*/
+.investmentItem .title,
+.investmentItem .schedule{ padding:0 32px;}
+.investmentItem{ border:1px solid #d3d3d3 ; position:relative;}
+.investmentItem a{ display:block; z-index:2}
+.investmentItem .title{ position: relative; line-height:53px; height:53px; font-weight: bold; font-size:16px; color: #262626; }
+.investmentItem .title u{ color: #fff;  width:30px; height:30px; background:#4193D7; display: inline-block; vertical-align: middle; text-align: center; line-height: 30px; margin:-6px 14px 0 0;}
+.investmentItem .title em{ color: #656565; font-size:14px; font-weight: normal}
+.investmentItem .title i{position: absolute; right:36px; font-size:14px; color:#656565; font-weight: normal;}
+.investmentItem .money{ padding:30px 0; margin:0 0 0 32px; line-height: 34px; height:35px; position: relative;}
+.investmentItem .money li{ border-right:1px solid #DFDFDF; }
+.investmentItem .money .moneyL{ width:195px;}
+.investmentItem .money .moneyC{ width:263px; text-align: center;}
+.investmentItem .money .moneyR{ width:281px; border:none; }
+.investmentItem .money p{ color: #8B8B8B;}
+.investmentItem .money span{ color: #333333; font-size:24px;}
+.investmentItem .status{ display: block; text-align: center; line-height: 69px; width:69px; height:69px; background: #f06a11; color:#fff; border-radius:50%; -moz-border-radius: 50%;  -webkit-border-radius: 50%; position:absolute; behavior:url(plugIn/PIE.htc); top:66px; right:65px; z-index:2}
+.investmentItem .schedule{ color: #8B8B8B;  height:45px; line-height: 45px; position: relative;}
+.investmentItem .schedule .scheduleL{ position:relative;}
+.investmentItem .schedule .scheduleR span{ color:#333;}
+.investmentItem .schedule .scheduleL .percentage{ position:absolute; right:-34px; top:0; }
+.investmentItem .schedule .scheduleR{ margin-right:38px; width:200px;}
+
+/*左侧导航*/
+/*模式1*/   /*基础版*/
+.sideNav dt,
+.sideNav dd a{ display: block; text-align: center; line-height: 46px; width:194px; height:46px; font-size:16px;}
+.sideNav dt{ color:#737373;  font-weight: bold; background: #f9f9f9; position: relative; text-indent: -31px;}
+.sideNav dt em{ margin-right:10px; font-weight: normal; position:relative;}
+.sideNav .one em{ font-weight: 600; top:-1px;}
+.sideNav .two em{ right:-4px;}
+.sideNav .three em{ font-weight: 500; top:-2px;}
+.sideNav .four em{ top:-1px;}
+.sideNav dd a{ color:#767676;}
+.sideNav dd a:hover{ color:#f06a11; }
+/*模式2*/
+.sideNav1 .sideNavList{ position: relative;}
+.sideNav1 { position: relative;}
+.sideNav1 .defaultDt,
+.sideNav .activeDt{position: absolute; left:-5px; width:5px; }
+.sideNav1 .activeDt{ height:56px; background: #3c9bf3;}
+.sideNav1 .defaultDt{  background: url("../images/aboutUs_nav_bg.png") no-repeat; behavior:url(plugIn/PIE.htc); height:61px; }
+.sideNav1 dd{ background: #fff; border-bottom:1px solid #efefef;}
+.sideNav1 dd a{ height:56px; line-height:56px;}
+.sideNav1 dd a:hover{ color:#767676;}
+.sideNav1 .default{background: #3c9bf3 !important; }
+.sideNav1 .default a{ color:#fff;}
+
+/*我的账户table*/
+.tabLibrary{ width:978px;}
+.tabLibrary th{ background: #f4f4f4; height:42px; color:#595959;}
+.tabLibrary td{ border-bottom:1px solid #dfdfdf; text-align: center; color:#333; line-height:26px; padding:24px 0;}
+.tabLibrary td em{ color:#999999;}
+.tabLibrary .one{ width:240px;}
+.tabLibrary .two{ width:120px;}
+.tabLibrary .three,
+.tabLibrary .seven{ width:81px;}
+.tabLibrary .four,
+.tabLibrary .five,
+.tabLibrary .six{ width:152px;}
+.tabLibrary td.seven{color:#408fcb;}
+
+/*我的投资、理财详情页 tab切换*/
+.Tab{ position: relative;}
+.Tab .tableTab{ height:44px; width:140px; display: block; position: absolute; border-top:4px solid #cccccc; top:-47px; text-align: center; line-height:44px; color:#a6a6a6; font-size:16px; border-left:1px solid #fff; border-right:1px solid #fff; cursor:pointer;}
+.Tab .TabOne{ left:0;}
+.Tab .TabTwo{ left:150px;}
+.Tab .TabThree{ left:300px;}
+.Tab span.active{ color:#333; border-top-color: #3c9bf3; border-left-color: #dfdfdf; border-right-color:#dfdfdf; background: #fff; cursor:text;}
+
+/*底部角标*/
+.jumpPage{ height:110px; line-height:110px; text-align: center; position: relative;}
+.jumpPage .pageList{ position:absolute; top:50%; margin-top:-15px; left:50%;}
+.jumpPage ul li{ float: left; text-align: center; height:28px; line-height:30px; border:1px solid #dfdfdf; margin-right:10px; color:#7b7b7b; font-size:12px;  }
+.jumpPage ul li a{ color: #7b7b7b; font-size:14px; padding: 0 10px;}
+
+/*面包屑*/
+.breadcrumb{ height:35px; border-top:1px solid #cccccc; background: #3c9bf3; line-height:36px; color:#fff; }
+.breadcrumb a{ color:#fff; }
+
+/*表单*/
+.userFrom{ line-height:36px;}
+.userFrom .FU{ margin-bottom:24px; position: relative; }
+.userFrom .setPassword{ margin-bottom: 0}
+.userFrom .last{ margin-bottom:0;}
+.userFrom .FU span{ border:1px solid #dfdfdf; }
+.userFrom .FU label,
+.userFrom .FU .label{ width: 250px; text-align: right; height:36px; cursor:pointer}
+.userFrom .FU label em{color:#ff2323;}
+.userFrom .FU input,
+.userFrom .FU .input{ width:240px; height:34px; margin-left:16px; padding-left: 16px;}
+.userFrom .FU input{ border:1px solid #dfdfdf; background: url("../images/userSprite.png") 234px -64px no-repeat;behavior:url(plugIn/PIE.htc);}
+#SMSCodePhone{ background-position:106px -137px;behavior:url(plugIn/PIE.htc);}
+#userNamePhone,
+#userNameMail{ background-position:234px -242px;behavior:url(plugIn/PIE.htc);}
+#passwordPhone,
+#confirmPasswordPhone,
+#passwordMail,
+#confirmPasswordMail{ background-position:234px -276px;behavior:url(plugIn/PIE.htc);}
+#mail{ background-position:229px -347px;behavior:url(plugIn/PIE.htc);}
+.userMain .FU .msg{font-size:12px;text-align: left;padding-left:16px; position:relative; text-indent:20px}
+.userFrom .FU .grade{ margin-left:266px; text-align: left; line-height: 46px}
+.msg .error,
+.msg .info,
+.msg .success{ position:absolute; top:7px; left:10px; width:20px; height:20px; background: url("../images/userSprite.png")no-repeat}
+.msg .error{background-position: 0 -36px;behavior:url(plugIn/PIE.htc);}
+.msg .info{ background-position: 0 -323px;behavior:url(plugIn/PIE.htc);}
+.msg .success{ background-position: 0 0;behavior:url(plugIn/PIE.htc);}
+.userFrom .SMSCode .weakTime{ background: #F5F5F5;}
+.userFrom .FU .grade u{ padding:0 22px; background: #DDDDDD; color:#ffffff}
+.userFrom .FU .grade .weak{background: #EA2602}
+.userFrom .FU .grade .on{ background: #F77B09}
+.userFrom .FU .grade .strong{ background: #609900}
+.userFrom .FU .code{ width:110px;}
+.userFrom .FU .verificationCode{ position: absolute; right:246px; cursor: pointer}
+.userFrom .FU .codeBtn{ padding:0 16px;line-height:34px}
+.user .regsiterBtn { width:256px; height:36px; border:none; background:#f06a11; color:#fff; font-size:14px; margin:30px 0 0 22px;}
+/*单选框*/
+.userFrom .radio .left{ text-align: right}
+.userFrom .radio .right input,
+.userFrom .radio .right label{ cursor:pointer}
+.userFrom .radio .right{ margin-left:16px; }
+.userFrom .radio .right .man{ margin-right:20px}
+.userFrom .promptDefault{ padding:10px 0 10px 140px}
+
+/*模态表单验证*/
+.modality{ position: fixed; _position:absolute; _top:expression(eval(document.documentElement.scrollTop)); background:rgba(0,0,0,.6); height:100%; width:100%; z-index: 999; }
+
+/*显示隐藏类*/
+.detailsListTab .page{ display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
