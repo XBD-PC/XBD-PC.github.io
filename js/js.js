@@ -33,7 +33,7 @@ $(function(){
         $('#nav .columnList').hover(function(){
             $(this).addClass('active').find('em').html('&#xe601;');
         },function(){
-            //$(this).removeClass('active').find('em').html('&#xe600;');
+            $(this).removeClass('active').find('em').html('&#xe600;');
         })
         $('.line').click(function(event) {
             $(this).toggleClass('out').siblings('.nav-pad').slideToggle(300);
